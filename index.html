@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    max-height: max-content;
+}
+
+.footer-container {
+    display:inline-block;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display:inline;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+nav{
+    padding-right: 40px;
+    display:block;
+    position:relative;
+}
+header ul{
+    background: #333;
+list-style-type:none;
+margin:0px;
+padding:0px;
+color: white;
+font-size:20px;
+font-family:helvetica;
+display: inline-flex;
+position: static;
+
+}
+header ul li {
+  display: inline-flex;
+  font-size:16px;
+  padding: 5px;
+}
+header ul li a{
+    text-decoration: none;
+display:inline-block;
+font-size:16px;
+text-align:center;
+color:white;
+padding:20px;
+margin:2px;
+}
+header ul li a:hover{
+color:rgb(241, 184, 28);
+}
+.active{
+  color: rgb(215, 100, 43);
+border-bottom:1px solid white;
+}
+header ul li a::first-letter{
+text-transform:capitalize;
+}
+
+.hero {
+    background: url('C:\Users\prish\OneDrive\Pictures\bookslib.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 1rem 5rem 1rem;
+    margin-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+ footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    margin: 1rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height:40px;
+        background: #333;
+        transform: translateX(-100%);
+    }
+
+    header ul.nav-active {
+        transform: translateX(0);
+    }
+
+  img {
+        display: inline-block;
+        vertical-align: middle;
+    max-width: 100%;
+    border: 0;
+    float: left;
+    overflow: hidden;
+    }
+
+}
+.nav-right{
+    padding-left: 60px;
+    margin-right: 5px;
+
+}
+footer ul{
+    justify-content: center;
+    align-items: center;
+}
+footer ul .social-icons{
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-right: 50%;
+  margin: 70%;
+  vertical-align: middle;
+  float: right;
+}
+footer ul .social-icons li{
+    display: inline;
+    float: right;
+}
+.hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to right, rgb(254, 181, 12) ,coral);;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: gradient;
+    animation-timeline: auto;
+    animation-range-start: normal;
+
+        }
+        .hero-content {
+            max-width: 600px;
+            padding: auto;
+            margin-top: 20px;
+            animation: gradient 15s ease infinite;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            background-color:whitesmoke;
+            color: coral;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            border: 2px solid coral;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            color:white;
+            background-image: linear-gradient(to right, rgb(241, 19, 19) ,coral);
+            border-radius: 30px;
+        }
+        .flashcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flashcard {
+    background-color: white;
+    border: 1px solid coral;
+    border-radius: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.flashcard:hover {
+    transform: translateY(-20px);
+}
+
+.question {
+    font-weight: bold;
+    color: rgb(211, 107, 55);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.answer {
+    font-size: 1em;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+    word-spacing: normal;
+    color: #555;
+}
+dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:transparent;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  padding-top: 4px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleverBooks Home</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/bulb.png" height="101" width="120" alt="bks"> <h2 style="display: inline-block;float:inherit;">CleverBooks</h2>
+            <br><div class="nav-right">
+                <button class="button" style=" background-color:rgb(241, 184, 28);
+                border: none;
+                animation: gradient 15s ease infinite;
+                border-radius: 30px;
+                float: right;
+                position: relative;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-flex;
+                font-size: 16px;
+                margin: 4px 2px;
+                background-image: linear-gradient(to right, rgb(254, 181, 12) ,coral);
+                cursor: pointer;">Talk With Us</button>
+            </div>
+            <center>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Hero</a></li>
+                <li><a href="cleverbooks key ps.html ">Key Problems Solved </a></li>
+                <div class="navbar">
+                    <div class="dropdown">
+                      
+                    <li><a href="Cleverbooks key metrics.html"> Key Metrics</a>
+               
+                      <div class="dropdown-content">
+                        <a href="Cleverbooks key metrics.html" class="link">Effeciency</a>
+                        <a href="Cleverbooks key metrics.html" class="link">Accuracy</a>
+                        <a href="Cleverbooks key metrics.html" class="link">Scalability</a>
+                        <a href="Cleverbooks key metrics.html" class="link">Real-time Data</a>
+                      </div>
+                    </div> 
+                  </div>
+                    <li><a href="cleverbook review.html"> Reviews</a>
+                        <li><a href="CleverBooks Problem target Section.html">Problem Target</a></li>
+                <li><a href="Cleverbooks -CTA.html">CTA</a></li>
+            </ul>
+            </center> 
+        </nav>
+    </header>
+    <div class="hero"><br>
+        <img src="images/[removal.ai]_b7bc6724-675d-427b-b9e6-bfb68f657f69-people-concentrating-on-reading-books-k071fn.png" height="500px"width="350px" style="float: right;padding-left: 30px;padding-top: 30px;" >
+        <div class="hero-content">
+
+            <h1>Bookwormer's Cornerstone</h1>
+            <p>"Where Stories Meet Innovation – Discover the Future of Reading"</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </div><br><br>
+    <div class="flashcards">
+        <div class="flashcard">
+            <div class="question">What is CleverBooks?</div>
+            <div class="answer">CleverBooks is a unique bookstore that combines traditional literature with cutting-edge technology to enhance the reading experience.</div>
+        </div>
+        <div class="flashcard">
+            <div class="question">How does CleverBooks integrate technology?</div>
+            <div class="answer">CleverBooks offers augmented reality experiences, digital platforms, and hybrid books to bring stories to life and offer a modern reading experience.</div>
+        </div>
+        <div class="flashcard">
+            <div class="question">What events and workshops does CleverBooks offer?</div>
+            <div class="answer">CleverBooks hosts author signings, book launches, creative writing workshops, and children's story hours to foster community and creativity.</div>
+        </div>
+        <div class="flashcard">
+            <div class="question">How does CleverBooks support sustainability?</div>
+            <div class="answer">CleverBooks is committed to sustainability by offering eco-friendly publications, hosting events on sustainable living, and serving organic refreshments in its café.</div>
+        </div>
+    </div>
+       <br><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <img src="images/bulb.png" height="80" width="90" alt="bks"> <h2 style="display: inline-block;float:inherit;">CleverBooks</h2>
+            <br>
+            <div class="footer-section"> <p style="text-align: justify;font-size:15px;font-family:sans-serif; padding: auto;margin: auto;float: left;justify-content: center;align-items: center;display: inline;margin-top: 4px;margin-left: 2px;padding-top: 2px;"> 
+                CleverBooks is a  beloved community cornerstone for book lovers of all ages and interests.
+                We are here to provide a welcoming space where everyone 
+                can discover the joy of books. We believe that books are more than just pages and ink
+                —they are gateways to new worlds, ideas, and experiences.
+                Your favorite bookstore for all genres.</p> </div>
+           <br>
+            <div class="footer-section">
+               
+            </div>
+            <div class="footer-section"><br>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: info@cleverbooks.com</li><br>
+                    <li>Phone: +123-456-7890</li><br>
+                    <li>Address: 123 Book St, Booktown, BK 12345</li><br>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+               <center>
+                <ul class="social-icons">
+                
+                    <li><a href="#"><img src="images/[removal.ai]_3ca4efbb-4f5a-4e30-89d7-a8e7ee2b19c6-download.png" alt="Linkedin" width="100px" height="80px"></a></li>
+                    <li><a href="#"><img src="images/[removal.ai]_1a51427c-96f9-4714-a9bc-515de50d57df-download.png" alt="Twitter" width="100px" height="80px"></a></li>
+                    <li><a href="#"><img src="images/[removal.ai]_eac16458-5b8c-4200-bf2b-fabcf952e03c-download.png" alt="Instagram" width="100px" height="80px"></a></li>
+                </ul></center>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CleverBooks. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
